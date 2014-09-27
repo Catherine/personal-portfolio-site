@@ -294,108 +294,6 @@ h1{
 	}
 }
 
-/*#ddd{
-	display: table;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.ddd_row{
-	list-style: none;
-	margin: 0;
-	padding: 0px;
-}
-
-.ddd_row li {
-	margin: 0 auto;
-	display: table-cell;
-}
-
-
-.ddd_icon{
-	height: 100px;
-	width: 100px;
-	margin: 0px 100px;
-	display: inline-block;
-	background-size: cover;
-}
-
-.ddd_text{
-	height: 100px;
-	width: 300px;
-	text-align: center;
-}
-
-.ddd_text h2{
-	margin-top: 0;
-}
-
-.design{
-	background-image: url('../img/icon_book_128.png');
-}
-
-.develop{
-	background-image: url('../img/icon_settings_128.png');
-}
-
-.deploy{
-	background-image: url('../img/icon_laptop_128.png');
-}
-
-
-
-@media (min-width: 768px) {
-    .ddd_row li {
-    
-  	}
-
-	#ddd{
-		
-	}
-	.ddd_icon{
-		
-	}
-	.ddd_text{
-		height: 100px;
-		width: 240px;
-		padding: 0px 10px;
-		margin: 0 auto;
-	}
-
-}
-
-@media (min-width: 992px) {
-	#ddd{
-		display: table;
-	}
-
-	.ddd_row{
-
-	}
-
-	.ddd_row li {
-		height: 150px;
-		width: 33%;
-		display: table-cell;
-	}
-
-	.ddd_icon{
-		
-	}
-
-	.ddd_text{
-		height: 100px;
-		width: 300px;
-	}
-}
-
-@media (min-width: 1200px) {
-  
-
-
-}*/
-
-
 /* ----- WORK ----- */
 #work{
 	height: auto;
@@ -452,11 +350,6 @@ a:hover{
 }
 
 .project_item{
-	/* Use two settings below 
-	for single line of projects on mobile.
-	keep commented out for two colums of projects*/
-	/*width: 66%;*/
-	/*padding: 2%;*/
 	display: inline-block;
 }
 
@@ -486,11 +379,8 @@ a:hover{
 
 	.project_item{
 		width: 180px;
-		/*height: 152px;*/
 		padding: 6px;
 	}
-
-
 }
 
 @media (min-width: 992px) {
@@ -499,10 +389,8 @@ a:hover{
 	}
   	.project_item{
 		width: 312px;
-		/*height: 262px;*/
 		padding: 6px;
 	}
-
 }
 
 @media (min-width: 1200px) {
@@ -511,15 +399,9 @@ a:hover{
 	}
 	.project_item{
 		width: 285px;
-		/*height: 239px;*/
 		padding: 6px;
 	}
-
-
-
 }
-
-
 
 /* ----- CONTACT ----- */
 #contact{
@@ -642,6 +524,9 @@ textarea {
 }
 
 
+
+
+
 /* ----- FOOTER ----- */
 footer{
 	height:60px;
@@ -654,24 +539,16 @@ footer{
 	font-size: 12px;
 }
 
-
-
-
-
-
-
 /* ----- MEDIA QUERIES ----- */
 
 @media (max-width: 650px) {
 	form{
 		width: 90%;
-		/*padding:2%;*/
 	}
 
 	input {
 		width: 96%;
 		height: 50px;
-		/*padding: 0% 2%;*/
 	}
 
 	textarea {
@@ -680,7 +557,7 @@ footer{
 	}
 
 	#contact button {
-		right: 10%;
+		left: 0;
 	}
 
 
@@ -695,39 +572,19 @@ footer{
 		font-weight: 100;
 		font-size: 12px;
 	}
-
-
-
 }
 
 @media (min-width: 768px) {
-
 
 }
 
 @media (min-width: 992px) {
   
-
-
-
 }
 
 @media (min-width: 1200px) {
   
-
-
-
-
 }
-
-
-
-
-
-/* ----- ANIMATED ARROW ----- */
-
-
-
 
 
 
