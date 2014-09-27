@@ -1,0 +1,738 @@
+
+*{
+	/*border: 1px solid green;*/
+}
+
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('../fonts/chunkfive-webfont.eot');
+    src: url('../fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body{
+	min-width: 320px;
+}
+
+body{
+	/*font-family: 'Lato', 'Source Sans Pro', 'Open Sans', sans-serif;*/
+	font-family: 'Lato', serif;
+	font-weight: 300;
+	background-image: url('../img/paint_large.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav{
+	/*background-color: white;*/
+}
+
+section{
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+h1{
+	font-weight: bold;
+	margin: 25px auto;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.navbar{
+	padding-right: 20px;
+	font-weight: 700;
+}
+
+.navbar1 li.active, #nav2 li.active{
+	height: 50px;
+	border-bottom: 4px solid #669999;
+}
+
+#nav2{
+	padding: 0;
+	height: 50px;
+	width: 100%;
+	background: url('../img/nav_background.png');
+	position: absolute;
+	top: auto;
+	z-index: 100;
+}
+
+@media (min-width: 0px) and (max-width: 479px){
+	.navbar2{
+		display: none;
+	}
+}
+
+.navbar-collapse {
+	padding-right: 0px;
+}
+
+.navbar2{
+	display: none;
+}
+
+#nav_space {
+	height: 50px;
+	width: 100%;
+	/*margin-bottom: 15px;*/
+}
+
+.navbar-brand{
+	margin-left: -50px;
+}
+
+/* ----- HOME ----- */
+
+#home{
+	height: 620px;
+	background-color: ;
+}
+
+#center_banner{
+	margin-top: 120px;
+	width: 100%; 
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#home h1, #home h3{
+	font-family: 'Lato', sans-serif;
+	background:rgba(0,0,0,.6); 
+	color: #eee; 
+	font-weight: 400; 
+	font-size: 38px;
+	margin: 5px; 
+	padding:10px; 
+	display: table;
+}
+
+#home h1{
+	padding-right: 5px;
+}
+
+#home h3{
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 21px;
+}
+
+/*#banner_image{
+	margin: 0 auto;
+	width: 300px; 
+	height: 120px;
+	background-image: url('../img/catherine_ddd_bw.png');
+	background-size: cover;
+}*/
+
+.scroll_down {
+	background: url('../img/scrolldown.png');
+	margin-top: 250px;
+	position: absolute;
+	margin-left: -16px;
+	width: 32px;
+	height: 32px;
+	left: 50%;
+	opacity: 1;
+}
+
+@media (min-width: 650px) {
+	#banner_image{
+	  	width: 500px; 
+		height: 200px;
+		background-image: url('../img/catherine_ddd_bw.png');
+		background-size: cover;
+	}
+	#home{
+		/*height: 620px;*/
+		background-color: ;
+	}
+
+}
+
+@media (min-width: 992px) {
+  
+
+
+
+}
+
+@media (min-width: 1200px) {
+  
+
+
+
+
+}
+
+
+/* ----- ABOUT ----- */
+#about{
+	/*height: 600px;*/
+	background-color: #669999;
+	text-align: center;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	z-index: 1;
+}
+
+#self_portrait{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -140px;
+	height: 200px;
+	width: 200px;
+	background-color: #669999;
+	background-image: url('../img/self_bw_circle.png');
+	background-size: cover;
+	border: 8px solid #669999;
+	border-radius: 100px;
+}
+
+.modal-body{
+	padding-top: 0px;
+
+}
+
+.resume_button, .resume_button:focus{
+	border-radius: 25px;
+	background: transparent;
+	border: 3px solid #333;
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+	float: right;
+}
+
+.resume_button:hover{
+	border-color:;
+}
+
+/* ----- BANNER ----- */
+
+#banner{
+	width: 100%;
+	height: auto;
+	padding: 80px 0px 120px;
+	background-color: #e3e3e3;
+	background-image: url('../img/bannerbg.jpg');
+	text-align: center;
+}
+
+#banner img{
+	margin: auto;
+}
+
+#banner .container{
+	max-width: 970px;
+}
+
+#banner h2, #about h2{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: ;
+	font-family: 'chunkfiveroman', sans-serif;
+}
+
+.design, .develop, .deploy{
+	width: 64px;
+	height: 64px;
+	margin: auto;
+}
+
+.design{
+	background-image: url('../img/icon_book_64.png');
+}
+
+.develop{
+	background-image: url('../img/icon_settings_64.png');
+}
+
+.deploy{
+	background-image: url('../img/icon_laptop_64.png');
+}
+
+@media (min-width: 768px) {
+	.design, .develop, .deploy{
+		width: 128px;
+		height: 128px;
+	}
+    .design{
+		background-image: url('../img/icon_book_128.png');
+	}
+
+	.develop{
+		background-image: url('../img/icon_settings_128.png');
+	}
+
+	.deploy{
+		background-image: url('../img/icon_laptop_128.png');
+	}
+
+	
+}
+
+@media (min-width: 0px) and (max-width: 500px){
+	#banner h2{
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 400px){
+	#banner p{
+		font-size: 12px;
+	}
+}
+
+/*#ddd{
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ddd_row{
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+.ddd_row li {
+	margin: 0 auto;
+	display: table-cell;
+}
+
+
+.ddd_icon{
+	height: 100px;
+	width: 100px;
+	margin: 0px 100px;
+	display: inline-block;
+	background-size: cover;
+}
+
+.ddd_text{
+	height: 100px;
+	width: 300px;
+	text-align: center;
+}
+
+.ddd_text h2{
+	margin-top: 0;
+}
+
+.design{
+	background-image: url('../img/icon_book_128.png');
+}
+
+.develop{
+	background-image: url('../img/icon_settings_128.png');
+}
+
+.deploy{
+	background-image: url('../img/icon_laptop_128.png');
+}
+
+
+
+@media (min-width: 768px) {
+    .ddd_row li {
+    
+  	}
+
+	#ddd{
+		
+	}
+	.ddd_icon{
+		
+	}
+	.ddd_text{
+		height: 100px;
+		width: 240px;
+		padding: 0px 10px;
+		margin: 0 auto;
+	}
+
+}
+
+@media (min-width: 992px) {
+	#ddd{
+		display: table;
+	}
+
+	.ddd_row{
+
+	}
+
+	.ddd_row li {
+		height: 150px;
+		width: 33%;
+		display: table-cell;
+	}
+
+	.ddd_icon{
+		
+	}
+
+	.ddd_text{
+		height: 100px;
+		width: 300px;
+	}
+}
+
+@media (min-width: 1200px) {
+  
+
+
+}*/
+
+
+/* ----- WORK ----- */
+#work{
+	height: auto;
+	background-color: #e3e3e3;
+	padding-top: 40px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+#work_nav{
+	display: table;
+	width: 100%;
+	margin: 0px auto;	
+}
+
+.nav-tabs {
+  width: 438px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: none;
+}
+
+.nav-tabs > li{
+	border-right: 2px solid black;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	/*color: #eeeeee;*/
+}
+
+.nav-tabs > li > a{
+	padding: 0px 20px;
+	text-align: center;
+	color: #669999;
+	/*margin: 10px 0px;*/
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: transparent;
+	border: none;
+}
+
+a:hover{
+	color: #666666;
+}
+
+#projects{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tab-content{
+	padding-top: 20px;
+}
+
+.project_item{
+	/* Use two settings below 
+	for single line of projects on mobile.
+	keep commented out for two colums of projects*/
+	/*width: 66%;*/
+	/*padding: 2%;*/
+	display: inline-block;
+}
+
+.project_item{
+	width: 40%;
+	padding: 1%;
+}
+
+.project_item img{
+	max-width: 100%;
+}
+
+@media (min-width: 600px) {
+
+	.project_item{
+		width: 40%;
+		padding: 1%;
+	}
+
+}
+
+
+@media (min-width: 768px) {
+	#work{
+		height: 700px;
+	}
+
+	.project_item{
+		width: 180px;
+		/*height: 152px;*/
+		padding: 6px;
+	}
+
+
+}
+
+@media (min-width: 992px) {
+	#work{
+		height: 1000px;
+	}
+  	.project_item{
+		width: 312px;
+		/*height: 262px;*/
+		padding: 6px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	#work{
+		height: 900px;
+	}
+	.project_item{
+		width: 285px;
+		/*height: 239px;*/
+		padding: 6px;
+	}
+
+
+
+}
+
+
+
+/* ----- CONTACT ----- */
+#contact{
+	background-color: #e74c3c;
+	height: auto;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	color: #eee;
+}
+
+#contact h1{
+	font-weight: bold;
+	margin: 25px auto;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+#contact h4{
+	font-weight: 300;
+}
+
+#contact_icons{
+	margin: 35px auto;
+	height: 50px;
+}
+
+#contact_icons a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 0px 5px;
+	background-size: cover;
+}
+
+#icon_twitter{
+	background-image: url('../img/twitter_logo_light.png');
+}
+
+#icon_twitter:hover{
+	background-image: url('../img/twitter_logo_dark.png');
+}
+
+#icon_linkedin{
+	background-image: url('../img/linkedin_logo_light.png');
+}
+
+#icon_linkedin:hover{
+	background-image: url('../img/linkedin_logo_dark.png');
+}
+
+#icon_git{
+	background-image: url('../img/git_logo_light.png');
+}
+
+#icon_git:hover{
+	background-image: url('../img/git_logo_dark.png');
+}
+
+
+form{
+	width: 600px;
+	background-color: #eee;
+	border-radius: 6px;
+	margin: 35px auto 20px auto;
+	display: block;
+	padding: 10px;
+	position: relative;
+	font-weight: 400;
+}
+
+input {
+	width: 270px;
+	height: 50px;
+	padding: 0px 0px 0px 20px;
+	border-radius: 3px;
+	background-color: white;
+	border: none;
+	color: #7ed5c8;
+	margin: 10px;
+	float: left;
+}
+
+textarea {
+	width: 560px;
+	height: 80px;
+	padding: 20px;
+	color: #7ed5c8;
+	border-radius: 3px;
+	background-color: white;
+	margin: 10px;
+	border: none;
+	resize: vertical;
+}
+
+.submit_form {
+	display: block;
+	padding: 10px 15px;
+	background-color: #4bd0b8;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	border: none;
+	color: white;
+	border-radius: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: -65px;
+	left: 210px;
+/*	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;*/
+}
+
+.btn-warning {
+	color: #ffffff;
+	background-color: #f0ad4e;
+	border-color: #eea236;
+}
+
+
+/* ----- FOOTER ----- */
+footer{
+	height:60px;
+	background-color: #c0392b;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 22px;
+	color: white;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 650px) {
+	form{
+		width: 90%;
+		/*padding:2%;*/
+	}
+
+	input {
+		width: 96%;
+		height: 50px;
+		/*padding: 0% 2%;*/
+	}
+
+	textarea {
+		width: 96%;
+		height: 120px;
+	}
+
+	#contact button {
+		right: 10%;
+	}
+
+
+	/* ----- FOOTER ----- */
+	footer{
+		height:60px;
+		background-color: #c0392b;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 22px;
+		color: white;
+		font-weight: 100;
+		font-size: 12px;
+	}
+
+
+
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+  
+
+
+
+}
+
+@media (min-width: 1200px) {
+  
+
+
+
+
+}
+
+
+
+
+
+/* ----- ANIMATED ARROW ----- */
+
+
+
+
+
+
+
+
+
+
+
