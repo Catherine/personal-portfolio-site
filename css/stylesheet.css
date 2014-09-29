@@ -16,7 +16,7 @@
 }
 
 html, body{
-	min-width: 320px;
+	min-width: 360px;
 }
 
 body{
@@ -589,10 +589,6 @@ footer{
 @media (min-width: 1200px) {
   
 }
-
-
-
-
 
 
 
