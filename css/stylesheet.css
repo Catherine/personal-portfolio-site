@@ -48,7 +48,6 @@ h1{
 }
 
 .navbar{
-	padding-right: 20px;
 	font-weight: 700;
 }
 
@@ -67,8 +66,12 @@ h1{
 	z-index: 100;
 }
 
+#nav2 .navbar-collapse{
+	background: url('../img/nav_background.png');
+}
+
 @media (min-width: 0px) and (max-width: 479px){
-	.navbar2{
+	.navbar1{
 		display: none;
 	}
 }
@@ -84,7 +87,7 @@ h1{
 #nav_space {
 	height: 50px;
 	width: 100%;
-	/*margin-bottom: 15px;*/
+
 }
 
 .navbar-brand{
@@ -126,14 +129,6 @@ h1{
 	text-transform: uppercase;
 	font-size: 21px;
 }
-
-/*#banner_image{
-	margin: 0 auto;
-	width: 300px; 
-	height: 120px;
-	background-image: url('../img/catherine_ddd_bw.png');
-	background-size: cover;
-}*/
 
 .scroll_down {
 	background: url('../img/scrolldown.png');
@@ -223,7 +218,6 @@ h1{
 }
 
 /* ----- BANNER ----- */
-
 #banner{
 	width: 100%;
 	height: auto;
@@ -282,8 +276,6 @@ h1{
 	.deploy{
 		background-image: url('../img/icon_laptop_128.png');
 	}
-
-	
 }
 
 @media (min-width: 0px) and (max-width: 500px){
@@ -324,15 +316,12 @@ h1{
 	border-right: 2px solid black;
 	text-transform: uppercase;
 	font-weight: 700;
-
-	/*color: #eeeeee;*/
 }
 
 .nav-tabs > li > a{
 	padding: 0px 20px;
 	text-align: center;
 	color: #669999;
-	/*margin: 10px 0px;*/
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -366,13 +355,15 @@ a:hover{
 	max-width: 100%;
 }
 
-@media (min-width: 600px) {
+.project_item:hover{
+	opacity: .6;
+}
 
+@media (min-width: 600px) {
 	.project_item{
 		width: 40%;
 		padding: 1%;
 	}
-
 }
 
 
@@ -406,14 +397,6 @@ a:hover{
 		padding: 6px;
 	}
 }
-
-/*#project_prereqme{
-	background: url('../img/portfolio_imgs/social-widget-1_preview_bw.png');
-}*/
-
-
-
-
 
 /* ----- CONTACT ----- */
 #contact{
@@ -524,9 +507,6 @@ textarea {
 	position: absolute;
 	bottom: -65px;
 	left: 210px;
-/*	-webkit-transition: background-color 0.3s ease;
-	-moz-transition: background-color 0.3s ease;
-	transition: background-color 0.3s ease;*/
 }
 
 .btn-warning {
@@ -534,10 +514,6 @@ textarea {
 	background-color: #f0ad4e;
 	border-color: #eea236;
 }
-
-
-
-
 
 /* ----- FOOTER ----- */
 footer{
@@ -586,20 +562,7 @@ footer{
 	}
 }
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-  
-}
-
-@media (min-width: 1200px) {
-  
-}
-
 /* Modal styles */
-
 .view_project{
 	/*height: 500px;*/
 	width: 100%;

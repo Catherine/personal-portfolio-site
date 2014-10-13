@@ -150,11 +150,8 @@
                         </p>
                     </div>
                     <div class="col-md-3"></div>
-
                 </div>
 
-
-                <!-- <p>Official document summing up my experiences/skills -></p> -->
                 <button class="btn btn-default btn-lg resume_button" data-toggle="modal" data-target="#myModal"> Resume</button>
 
                 <!-- Modal -->
@@ -177,7 +174,7 @@
             <!-- begin work -->
             <section id="work">
                 <div class="container">
-                    <h1>Hey look, I make things. (section in progress)</h1>
+                    <h1>Hey look, I make things. (more to come soon!)</h1>
                 </div>
                 <!-- Nav tabs -->
                 <!-- <div id="work_nav">
@@ -204,10 +201,10 @@
                                     <img class="md-trigger" data-modal="modal-3" src="img/portfolio_imgs/prereqme_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img class="md-trigger" data-modal="modal-4" src="img/portfolio_imgs/fmap_preview_bw.png">
+                                    <a href="https://github.com/patchell-c/fmap" target="_blank"><img class="md-trigger" src="img/portfolio_imgs/fmap_preview_bw.png"></a>
                                     </div
                                     ><div class="project_item">
-                                    <img class="md-trigger" data-modal="modal-5" src="img/placeholder4.png">
+                                    <img src="img/placeholder4.png">
                                     </div
                                     ><div class="project_item">
                                     <img src="img/placeholder4.png">
@@ -354,13 +351,15 @@
 
 
         <!-- Modals to display my work -->
-
         <div class="md-modal md-effect-1" id="modal-1">
 			<div class="md-content">
 				<h3>Social Proof Widget</h3>
 				<div class="view_project" id="project_wd">
 					<img src="img/portfolio_imgs/social-widget-1.png">
-					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.</p>
+					<p>
+                    Hypothesis: When users hear of or see other people using a product to solve needs similar to them, they are more willing to use the same product. 
+                    <br><br>
+                    What we did: Designed and created two front-end widgets (AB tested) using HTML5, Javascript, and CSS using Design for Delight methodologies. Social posts were pulled from Twitter, HouseParty, and our reviews using a back-end Java service with JAX-RS and AWS Database.</p>
 
 					<button class="md-close">x</button>
 				</div>
@@ -386,32 +385,24 @@
 				<h3>PrereqMe</h3>
 				<div class="view_project" id="project_prereqme">
 					<img src="img/portfolio_imgs/prereqme.png">
-					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.
-					
-					<br>
-					Team Members: 
-					<a href="http://www.katiesoldau.com">Katie Soldau</a>
-					<a href="#">Josh Caron</a>
-					<a href="#">Brian Ka...</a>
-
-					</p>
+					<p>Planning out courses is frustrating and tedious. My team built a web application called PrereqMe to solve this problem and improve the process while taking CCIS's Human Computer Interaction course.  Our product was able to help students visually view prerequisites, provide convenient access to course descriptions, and help them plan for the future.</p>
 
 					<button class="md-close">x</button>
 				</div>
 			</div>
 		</div>
 
-		<div class="md-modal md-effect-1" id="modal-4">
+		<!-- <div class="md-modal md-effect-1" id="modal-4">
 			<div class="md-content">
 				<h3>Java</h3>
 				<div class="view_project" id="project_wd">
-					<!-- <img src="img/portfolio_imgs/IM_web_dev_final.png"> -->
+					<img src="img/portfolio_imgs/IM_web_dev_final.png">
 					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.</p>
 
 					<button class="md-close">x</button>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- overlay element -->
 		<div class="md-overlay"></div>
@@ -457,7 +448,9 @@
                     $('.navbar1').fadeOut("fast");
                 }
                 else {
-                    $('.navbar1').fadeIn();
+                    if (window.width() > 479){
+                        $('.navbar1').fadeIn();
+                    }
                 }
             });
 
