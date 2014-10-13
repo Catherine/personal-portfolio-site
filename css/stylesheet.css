@@ -49,6 +49,7 @@ h1{
 
 .navbar{
 	font-weight: 700;
+	padding-right: 20px;
 }
 
 .navbar1 li.active, #nav2 li.active{
@@ -73,6 +74,10 @@ h1{
 @media (min-width: 0px) and (max-width: 479px){
 	.navbar1{
 		display: none;
+	}
+	.navbar{
+		font-weight: 700;
+		padding-right: 0px;
 	}
 }
 
