@@ -480,7 +480,7 @@ input {
 	border-radius: 3px;
 	background-color: white;
 	border: none;
-	color: #7ed5c8;
+	color: #333;
 	margin: 10px;
 	float: left;
 }
@@ -489,7 +489,7 @@ textarea {
 	width: 560px;
 	height: 80px;
 	padding: 20px;
-	color: #7ed5c8;
+	color: #333;
 	border-radius: 3px;
 	background-color: white;
 	margin: 10px;
