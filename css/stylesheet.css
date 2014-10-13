@@ -21,7 +21,7 @@ html, body{
 
 body{
 	/*font-family: 'Lato', 'Source Sans Pro', 'Open Sans', sans-serif;*/
-	font-family: 'Lato', serif;
+	font-family: 'Lato', 'Helvetica' sans-serif;
 	font-weight: 300;
 	background-image: url('../img/paint_large.jpg');
 	background-repeat: no-repeat;
@@ -407,6 +407,14 @@ a:hover{
 	}
 }
 
+/*#project_prereqme{
+	background: url('../img/portfolio_imgs/social-widget-1_preview_bw.png');
+}*/
+
+
+
+
+
 /* ----- CONTACT ----- */
 #contact{
 	background-color: #e74c3c;
@@ -588,6 +596,45 @@ footer{
 
 @media (min-width: 1200px) {
   
+}
+
+/* Modal styles */
+
+.view_project{
+	/*height: 500px;*/
+	width: 100%;
+}
+
+.view_project img{
+	max-width: 100%;
+}
+
+#project_prereqme{
+	/*background: url('../img/portfolio_imgs/prereqme.png') cover;*/
+}
+
+.md-modal button {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #E74C3C;
+	background: transparent;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	float: right;
+	position: fixed;
+	top: 0.5em;
+	right: 0.5em;
+}
+
+.md-modal button:hover {
+	background: rgba(0, 0, 0, .1);
 }
 
 

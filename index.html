@@ -15,8 +15,15 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css">
+        
+        <!-- modal styles -->
+        <link rel="stylesheet" type="text/css" href="ModalWindowEffects/css/component.css">
+        
+        <!-- my stylesheet -->
         <link rel="stylesheet" href="css/stylesheet.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="ModalWindowEffects/js/modernizr.custom.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -121,14 +128,8 @@
         <section id="about">
             <div class="container">
                 <div id="self_portrait"></div>
-                <!-- <h1>- About Me -</h1> -->
-                
-                <!-- <h3>Front End Developer and UI Designer living Boston, MA.</h3> -->
-
-                <!-- <img src="img/self_bw_circle.png" > -->
 
                 <div class="row">
-                    <!-- <div class="col-md-1"></div> -->
                     <div class="col-sm-6" style="color:#eee">
                         <h2>Pixels and code</h2>
                         <p style="text-align:left;">I am both a developer and a designer. I aspire to build interfaces that provide the user with a seamless experience.  Additionally, I believe that code is useless if it can only be understood by the writer.  Through explanatory comments, format consistency and refactoring, I strive to write code that can be utilized and reused by others.</p>
@@ -140,7 +141,6 @@
 
                         </p>
                     </div>
-                    <!-- <div class="col-md-1"></div> -->
                 </div>
                 <div class="row">
                     <div class="col-md-3"></div>
@@ -196,19 +196,18 @@
                         <div class="container">
                             <div id="projects">
                                 <div class="project_item">
-                                    <img src="img/portfolio_imgs/social-widget-1_preview_bw.png">
+                                    <img class="md-trigger" data-modal="modal-1" src="img/portfolio_imgs/social-widget-1_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img src="img/placeholder4.png">
+                                    <img class="md-trigger" data-modal="modal-2" src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png"></div
+                                    ><div class="project_item">
+                                    <img class="md-trigger" data-modal="modal-3" src="img/portfolio_imgs/prereqme_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png">
+                                    <img class="md-trigger" data-modal="modal-4" src="img/portfolio_imgs/fmap_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img src="img/portfolio_imgs/prereqme_preview_bw.png">
-                                    </div
-                                    ><div class="project_item">
-                                    <img src="img/portfolio_imgs/fmap_preview_bw.png">
+                                    <img class="md-trigger" data-modal="modal-5" src="img/placeholder4.png">
                                     </div
                                     ><div class="project_item">
                                     <img src="img/placeholder4.png">
@@ -353,11 +352,86 @@
         <!-- footer -->
         <footer>&copy Catherine Patchell 2014</footer>
 
+
+        <!-- Modals to display my work -->
+
+        <div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Social Proof Widget</h3>
+				<div class="view_project" id="project_wd">
+					<img src="img/portfolio_imgs/social-widget-1.png">
+					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.</p>
+
+					<button class="md-close">x</button>
+				</div>
+			</div>
+		</div>
+        
+		<div class="md-modal md-effect-1" id="modal-2">
+			<div class="md-content">
+				<h3>Web Design and Development</h3>
+				<div class="view_project" id="project_wd">
+					<img src="img/portfolio_imgs/IM_web_dev_final.png">
+					<p>This was my final project for IM 4100 Web Design and Development during the fall of 2013.  The class emphasized tools and strategies for design, such as site maps, wireframes, prototypes, usability testing, and iterative development.
+					<br><br>
+					My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience about the clothing production industry.  
+					</p>
+					<button class="md-close">x</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-1" id="modal-3">
+			<div class="md-content">
+				<h3>PrereqMe</h3>
+				<div class="view_project" id="project_prereqme">
+					<img src="img/portfolio_imgs/prereqme.png">
+					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.
+					
+					<br>
+					Team Members: 
+					<a href="http://www.katiesoldau.com">Katie Soldau</a>
+					<a href="#">Josh Caron</a>
+					<a href="#">Brian Ka...</a>
+
+					</p>
+
+					<button class="md-close">x</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="md-modal md-effect-1" id="modal-4">
+			<div class="md-content">
+				<h3>Java</h3>
+				<div class="view_project" id="project_wd">
+					<!-- <img src="img/portfolio_imgs/IM_web_dev_final.png"> -->
+					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.</p>
+
+					<button class="md-close">x</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- overlay element -->
+		<div class="md-overlay"></div>
+
         <!-- scipts -->
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/bootstrap.js"></script>
+
+        <!-- modal Effects js -->
+        <script src="ModalWindowEffects/js/classie.js"></script>
+        <script src="ModalWindowEffects/js/modalEffects.js"></script>
+        <script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="ModalWindowEffects/js/cssParser.js"></script>
+		<!-- <script src="ModalWindowEffects/js/css-filters-polyfill.js"></script> -->
+
 
         <script>
 
@@ -390,6 +464,7 @@
             $('#icon_twitter').tooltip();
             $('#icon_linkedin').tooltip();
             $('#icon_git').tooltip();
+
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
