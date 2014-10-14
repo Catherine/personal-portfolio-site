@@ -157,22 +157,6 @@ h1{
 		/*height: 620px;*/
 		background-color: ;
 	}
-
-}
-
-@media (min-width: 992px) {
-  
-
-
-
-}
-
-@media (min-width: 1200px) {
-  
-
-
-
-
 }
 
 
@@ -245,6 +229,7 @@ h1{
 	text-transform: uppercase;
 	font-weight: ;
 	font-family: 'chunkfiveroman', sans-serif;
+	letter-spacing: .04em;
 }
 
 .design, .develop, .deploy{
