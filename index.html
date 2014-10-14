@@ -63,7 +63,7 @@
 
 
                     </div>
-                    <div class="scroll_down"></div>
+                    <!-- <div class="scroll_down"></div> -->
                     <!-- <div id="banner_image"></div> -->
                     <!-- <img src="img/catherine.png" style="width: 500px; height: 200px;"> -->
                 </div>
@@ -449,11 +449,10 @@
 
                 if( $(this).scrollTop() > 540 ) {
                     $('.navbar1').fadeOut("fast");
+                    console.log("fade out the first name")
                 }
                 else {
-                    if (window.width() > 479){
-                        $('.navbar1').fadeIn();
-                    }
+                   $('.navbar1').fadeIn();
                 }
             });
 
