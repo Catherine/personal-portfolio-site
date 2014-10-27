@@ -3,11 +3,23 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+    <head prefix="og: http://ogp.me/ns#">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:url" content="http://catherinepatchell.com">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
         <title>Catherine Patchell</title>
-        <meta name="description" content="">
+        <meta property="og:title" content="Catherine Patchell's Personal Website">
+
+
+        <meta name="description" content="Hi! I'm Catherine, a Web Developer and UI/UX Designer working in Boston, MA.">
+        <meta property="og:description" content="Hi! I'm Catherine, a Web Developer and UI/UX Designer working in Boston, MA.">
+
+        <meta property="og:image" content="http://www.catherinepatchell.com/img/grumpy_cat.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="500">
+		<meta property="og:image:height" content="500">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
@@ -44,7 +56,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#home">Home</a></li>
                         <li><a href="#banner">About</a></li>
-                        <li><a href="#contact">Portfolio</a></li>
+                        <li><a href="#work">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -137,7 +149,7 @@
                     <div class="col-sm-6" style="color:#eee">
                         <h2>Driven by passion</h2>
                         <p style="text-align:left;">
-                        A design may be beautiful and innovative, but it isn't any good if it doesn't fulfil the need of a user.  A product must work as good as it looks.  I am passionate about learning how users interact with computers and technology in order to improve interfaces and users' experiences.
+                        A design may be beautiful and innovative, but it isn't any good if it doesn't fulfill the need of a user.  A product must work as good as it looks.  I am passionate about learning how users interact with computers and technology in order to improve interfaces and users' experiences.
 
                         </p>
                     </div>
@@ -196,18 +208,19 @@
                                     <img class="md-trigger" data-modal="modal-1" src="img/portfolio_imgs/social-widget-1_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img class="md-trigger" data-modal="modal-2" src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png"></div
+                                    <img class="md-trigger" data-modal="modal-2" src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png">
+                                    </div
                                     ><div class="project_item">
                                     <img class="md-trigger" data-modal="modal-3" src="img/portfolio_imgs/prereqme_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <a href="https://github.com/patchell-c/fmap" target="_blank"><img class="md-trigger" src="img/portfolio_imgs/fmap_preview_bw.png"></a>
+                                    <img class="md-trigger" data-modal="modal-4" src="img/portfolio_imgs/2D_geometric_gradient_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img src="img/placeholder4.png">
+                                    <img class="md-trigger" data-modal="modal-5" src="img/portfolio_imgs/2D_geometric_color_shapesadded_preview_bw.png">
                                     </div
                                     ><div class="project_item">
-                                    <img src="img/placeholder4.png">
+                                    <a href="https://github.com/patchell-c" target="_blank"><img class="md-trigger" src="img/portfolio_imgs/fmap_preview_bw.png"></a>
                                     </div
                                     ><div class="project_item">
                                     <img src="img/placeholder4.png">
@@ -354,7 +367,7 @@
         <div class="md-modal md-effect-1" id="modal-1">
 			<div class="md-content">
 				<h3>Social Proof Widget</h3>
-				<div class="view_project" id="project_wd">
+				<div class="view_project">
 					<img src="img/portfolio_imgs/social-widget-1.png">
 					<p>
                     Hypothesis: When users hear of or see other people using a product to solve needs similar to them, they are more willing to use the same product. 
@@ -373,7 +386,7 @@
 					<img src="img/portfolio_imgs/IM_web_dev_final.png">
 					<p>This was my final project for IM 4100 Web Design and Development during the fall of 2013.  The class emphasized tools and strategies for design, such as site maps, wireframes, prototypes, usability testing, and iterative development.
 					<br><br>
-					My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience about the clothing production industry.  
+					My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience about the cotton and clothing production industries.  
                     <br><br>
                     Can be found at: <a style="color: white;" href="http://www.catherinepatchell.com/wd" target="_blank">catherinepatchell.com/wd</a>
 
@@ -395,17 +408,37 @@
 			</div>
 		</div>
 
-		<!-- <div class="md-modal md-effect-1" id="modal-4">
+		<div class="md-modal md-effect-1" id="modal-4">
 			<div class="md-content">
-				<h3>Java</h3>
-				<div class="view_project" id="project_wd">
-					<img src="img/portfolio_imgs/IM_web_dev_final.png">
-					<p>Some text about this project. Goals. Difficulties. Challenges overcome. What class it was for. What I learned.</p>
+				<h3>Art</h3>
+				<div class="view_project">
+					<img class="center-block" src="img/portfolio_imgs/2D_geometric_gradient.png">
+					<p>Bristol, Acrylic - Fall 2013
+
+					<br><br>
+					
+					In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts. 
+
+					</p>
 
 					<button class="md-close">x</button>
 				</div>
 			</div>
-		</div> -->
+		</div>
+
+		<div class="md-modal md-effect-1" id="modal-5">
+			<div class="md-content">
+				<h3>2D</h3>
+				<div class="view_project">
+					<img class="center-block" src="img/portfolio_imgs/2D_geometric_color_shapesadded.png">
+					<p>Bristol, Acrylic - Fall 2013
+					<br><br>
+					In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts. 
+					</p>
+					<button class="md-close">x</button>
+				</div>
+			</div>
+		</div>
 
 		<!-- overlay element -->
 		<div class="md-overlay"></div>
@@ -449,7 +482,7 @@
 
                 if( $(this).scrollTop() > 540 ) {
                     $('.navbar1').fadeOut("fast");
-                    console.log("fade out the first name")
+                    // console.log("fade out the first name")
                 }
                 else {
                    $('.navbar1').fadeIn();
@@ -479,7 +512,6 @@
 
         </script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
          <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

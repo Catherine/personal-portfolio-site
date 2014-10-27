@@ -195,7 +195,7 @@ h1{
 	color: #333;
 	font-weight: 700;
 	text-transform: uppercase;
-	float: right;
+	margin-top: 30px;
 }
 
 .resume_button:hover{
@@ -588,6 +588,11 @@ footer{
 
 .md-modal button:hover {
 	background: rgba(0, 0, 0, .1);
+}
+
+.md-modal{
+	margin: auto;
+	max-width: 650px;
 }
 
 
