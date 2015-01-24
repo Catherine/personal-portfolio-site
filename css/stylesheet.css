@@ -334,6 +334,7 @@ a:hover{
 
 .project_item{
 	display: inline-block;
+	cursor: pointer;
 }
 
 .project_item{
@@ -592,9 +593,11 @@ footer{
 
 .md-modal{
 	margin: auto;
-	max-width: 650px;
+	max-width: 580px;
 }
 
-
+.md-content > div {
+	font-size: 1em;
+}
 
 
