@@ -103,7 +103,6 @@ h1{
 
 #home{
 	height: 620px;
-	background-color: ;
 }
 
 #center_banner{
@@ -152,10 +151,6 @@ h1{
 		height: 200px;
 		background-image: url('../img/catherine_ddd_bw.png');
 		background-size: cover;
-	}
-	#home{
-		/*height: 620px;*/
-		background-color: ;
 	}
 }
 
