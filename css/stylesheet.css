@@ -23,7 +23,7 @@ body{
 	/*font-family: 'Lato', 'Source Sans Pro', 'Open Sans', sans-serif;*/
 	font-family: 'Lato', 'Helvetica' sans-serif;
 	font-weight: 300;
-	background-image: url('../img/paint_large.jpg');
+	background-image: url('../img/laptop-notebook-hero.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -491,7 +491,7 @@ textarea {
 .submit_form {
 	display: block;
 	padding: 10px 15px;
-	background-color: #4bd0b8;
+	background-color: #669999;
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding-box;
 	background-clip: padding-box;
@@ -503,6 +503,11 @@ textarea {
 	position: absolute;
 	bottom: -65px;
 	left: 210px;
+}
+
+.submit_form:hover {
+	background-color: #4D8080;
+	color: #fff;
 }
 
 .btn-warning {
