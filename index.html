@@ -187,25 +187,25 @@
             </div>
             <div class="container">
                 <div class="project_item">
-                    <img class="md-trigger" data-modal="modal-6" src="img/portfolio_imgs/data_vis_airports_preview_bw.jpg">
+                    <img data-toggle="modal" data-target="#modal-airports" src="img/portfolio_imgs/data_vis_airports_preview_bw.jpg">
                 </div
                 ><div class="project_item">
-                    <img class="md-trigger" data-modal="modal-1" src="img/portfolio_imgs/social-widget-1_preview_bw.png">
+                    <img data-toggle="modal" data-target="#modal-widget" src="img/portfolio_imgs/social-widget-1_preview_bw.png">
                 </div
                 ><div class="project_item">
-                    <img class="md-trigger" data-modal="modal-2" src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png">
+                    <img data-toggle="modal" data-target="#modal-pants" src="img/portfolio_imgs/IM_web_dev_final_preview_bw.png">
                 </div
                 ><div class="project_item">
-                    <img class="md-trigger" data-modal="modal-3" src="img/portfolio_imgs/prereqme_preview_bw.png">
+                    <img data-toggle="modal" data-target="#modal-prereqme" src="img/portfolio_imgs/prereqme_preview_bw.png">
                 </div
                 ><div class="project_item">
-                    <img class="md-trigger" data-modal="modal-4" src="img/portfolio_imgs/2D_geometric_gradient_preview_bw.png">
+                    <img data-toggle="modal" data-target="#modal-art1" src="img/portfolio_imgs/2D_geometric_gradient_preview_bw.png">
                 </div
                 ><div class="project_item">
-                    <img class="md-trigger" data-modal="modal-5" src="img/portfolio_imgs/2D_geometric_color_shapesadded_preview_bw.png">
+                    <img data-toggle="modal" data-target="#modal-art2" src="img/portfolio_imgs/2D_geometric_color_shapesadded_preview_bw.png">
                 </div
                 ><div class="project_item">
-                    <a href="https://github.com/patchell-c" target="_blank"><img class="md-trigger" src="img/portfolio_imgs/fmap_preview_bw.png"></a>
+                    <a href="https://github.com/patchell-c" target="_blank"><img src="img/portfolio_imgs/fmap_preview_bw.png"></a>
                 </div
                 ><div class="project_item">
                     <img src="img/placeholder4.png">
@@ -240,84 +240,97 @@
         <footer>&copy Catherine Patchell 2015</footer>
 
         <!-- Modals to display my work -->
-        <div class="md-modal md-effect-1" id="modal-1">
-            <div class="md-content">
-                <h3>Social Proof Widget</h3>
-                <div class="view_project">
-                    <img src="img/portfolio_imgs/social-widget-1.png">
-                    <p>
-                    Hypothesis: When users hear of or see other people using a product to solve needs similar to them, they are more willing to use the same product. 
-                    <br><br>
-                    What we did: Designed and created two front-end widgets (AB tested) using HTML5, Javascript, and CSS using Design for Delight methodologies. Social posts were pulled from Twitter, HouseParty, and our reviews using a back-end Java service with JAX-RS and AWS Database.</p>
-
-                    <button class="md-close">x</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="md-modal md-effect-1" id="modal-2">
-            <div class="md-content">
-                <h3>Web Design and Development</h3>
-                <div class="view_project" id="project_wd">
-                    <img src="img/portfolio_imgs/IM_web_dev_final.png">
-                    <p>This was my final project for IM 4100 Web Design and Development during the fall of 2013.  The class emphasized tools and strategies for design, such as site maps, wireframes, prototypes, usability testing, and iterative development.
-                    <br><br>
-                    My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience.  Can be found at: <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/wd" target="_blank">catherinepatchell.com/wd</a>
-
-                    </p>
-                    <button class="md-close">x</button>
+        <div class="modal fade" id="modal-airports" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Data Visualization</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/data_vis_airports.png">
+                        <p>D3 - Fall 2014 (As part of graduate level Data Visualization class)<br> Live product: 
+                            <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/airports" target="_blank">here</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="md-modal md-effect-1" id="modal-3">
-            <div class="md-content">
-                <h3>PrereqMe</h3>
-                <div class="view_project" id="project_prereqme">
-                    <img src="img/portfolio_imgs/prereqme.png">
-                    <p>Planning out courses is frustrating and tedious. My team built a web application called PrereqMe to solve this problem and improve the process while taking CCIS's Human Computer Interaction course.  Our product was able to help students visually view prerequisites, provide convenient access to course descriptions, and help them plan for the future.</p>
-                    <button class="md-close">x</button>
+        <div class="modal fade" id="modal-widget" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Social Proof Widget</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/social-widget-1.png">
+                        <p>
+                        Hypothesis: When users hear of or see other people using a product to solve needs similar to them, they are more willing to use the same product.</p>
+                        <p>What we did: Designed and created two front-end widgets (AB tested) using HTML5, Javascript, and CSS using Design for Delight methodologies. Social posts were pulled from Twitter, HouseParty, and our reviews using a back-end Java service with JAX-RS and AWS Database.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="md-modal md-effect-1" id="modal-4">
-            <div class="md-content">
-                <h3>Art</h3>
-                <div class="view_project">
-                    <img class="center-block" src="img/portfolio_imgs/2D_geometric_gradient.png">
-                    <p>Bristol, Acrylic - Fall 2013
-                    <br><br>
-                    In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts.</p>
-                    <button class="md-close">x</button>
+        <div class="modal fade" id="modal-pants" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Web Design and Development</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/IM_web_dev_final.png">
+                        <p>This was my final project for IM 4100 Web Design and Development during the fall of 2013.  The class emphasized tools and strategies for design, such as site maps, wireframes, prototypes, usability testing, and iterative development.</p>
+                        <p>My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience.  Can be found at: 
+                            <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/wd" target="_blank">catherinepatchell.com/wd</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="md-modal md-effect-1" id="modal-5">
-            <div class="md-content">
-                <h3>Art</h3>
-                <div class="view_project">
-                    <img class="center-block" src="img/portfolio_imgs/2D_geometric_color_shapesadded.png">
-                    <p>Bristol, Acrylic - Fall 2013
-                    <br><br>
-                    In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts. 
-                    </p>
-                    <button class="md-close">x</button>
+        <div class="modal fade" id="modal-prereqme" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">PrereqMe</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/prereqme.png">
+                        <p>Planning out courses is frustrating and tedious. My team built a web application called PrereqMe to solve this problem and improve the process while taking CCIS's Human Computer Interaction course.  Our product was able to help students visually view prerequisites, provide convenient access to course descriptions, and help them plan for the future.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="md-modal md-effect-1" id="modal-6">
-            <div class="md-content">
-                <h3>Data Visualization</h3>
-                <div class="view_project">
-                    <img class="center-block" src="img/portfolio_imgs/data_vis_airports.png">
-                    <p>D3 - Fall 2014 (As part of graduate level Data Visualization class)
-                    <br><br>
-                    Live product: <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/airports" target="_blank">here</a>
-                    </p>
-                    <button class="md-close">x</button>
+        <div class="modal fade" id="modal-art1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Art</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/2D_geometric_gradient.png">
+                        <p>Bristol, Acrylic - Fall 2013</p>
+                        <p>In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-art2" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Art</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/2D_geometric_color_shapesadded.png">
+                        <p>Bristol, Acrylic - Fall 2013</p>
+                        <p>In addition to creating/designing with computers, I paint, make handmade greeting cards, and am interested in other traditional arts and crafts.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -330,17 +343,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/bootstrap.js"></script>
-
-        <!-- modal Effects js -->
-        <script src="ModalWindowEffects/js/classie.js"></script>
-        <script src="ModalWindowEffects/js/modalEffects.js"></script>
-        <script>
-            // this is important for IEs
-            var polyfilter_scriptpath = '/js/';
-        </script>
-        <script src="ModalWindowEffects/js/cssParser.js"></script>
-        <!-- <script src="ModalWindowEffects/js/css-filters-polyfill.js"></script> -->
-
 
         <script>
 
