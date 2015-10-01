@@ -177,25 +177,29 @@ h1{
     border-radius: 100px;
 }
 
-.modal-body{
+.project_modal .modal-body{
     background-color: #669999;
     color: #fff;
 }
 
-.modal-body img {
+.project_modal .modal-body img {
 	padding-bottom: 10px;
 }
 
-.modal-body {
+.project_modal .modal-body {
 	line-height: 17px;
 }
 
-.modal-header {
+.project_modal .modal-header {
 	border-bottom: none;
     background-color: #568181;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
+    padding: 10px 15px;
+}
+
+.modal-header {
     padding: 10px 15px;
 }
 
