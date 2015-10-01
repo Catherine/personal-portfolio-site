@@ -26,8 +26,7 @@ body{
 	background-image: url('../img/laptop-notebook-hero.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+	background-position: center top;
 	position: relative;
 }
 
