@@ -29,9 +29,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         
-        <!-- modal styles -->
-        <link rel="stylesheet" type="text/css" href="ModalWindowEffects/css/component.css">
-        
         <!-- my stylesheet -->
         <link rel="stylesheet" href="css/stylesheet.css">
 
@@ -218,7 +215,7 @@
         <!-- begin contact -->
         <section id="contact">
             <div class="container">
-                <img src="img/grumpy_cat.png" style="width: 150px; height: 150px; margin-bottom:10px;">
+                <img id="grumpy_cat"data-toggle="tooltip" data-placement="left" title="I like cats." src="img/grumpy_cat.png" style="width: 150px; height: 150px; margin-bottom:10px;">
                 <h1>Get in touch!</h1>
                 <div id="contact_icons">
                     <a href="https://twitter.com/cmpatchell" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
@@ -373,9 +370,7 @@
                 }
             });
 
-            $('#icon_twitter').tooltip();
-            $('#icon_linkedin').tooltip();
-            $('#icon_git').tooltip();
+            $('#grumpy_cat').tooltip();
 
             $(function() {
                 $('a[href*=#]:not([href=#])').click(function() {

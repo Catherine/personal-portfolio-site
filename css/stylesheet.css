@@ -308,36 +308,6 @@ h1{
     text-align: center;
 }
 
-#work_nav{
-    display: table;
-    width: 100%;
-    margin: 0px auto;    
-}
-
-.nav-tabs {
-  width: 438px;
-  margin-right: auto;
-  margin-left: auto;
-  border-bottom: none;
-}
-
-.nav-tabs > li{
-    border-right: 2px solid black;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.nav-tabs > li > a{
-    padding: 0px 20px;
-    text-align: center;
-    color: #669999;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: transparent;
-    border: none;
-}
-
 a:hover{
     color: #666666;
 }
@@ -446,31 +416,6 @@ a:hover{
 #contact_icons a:hover{
     color: #666666;
 }
-
-#icon_twitter{
-    background-image: url('../img/twitter_logo_light.png');
-}
-
-#icon_twitter:hover{
-    background-image: url('../img/twitter_logo_dark.png');
-}
-
-#icon_linkedin{
-    background-image: url('../img/linkedin_logo_light.png');
-}
-
-#icon_linkedin:hover{
-    background-image: url('../img/linkedin_logo_dark.png');
-}
-
-#icon_git{
-    background-image: url('../img/git_logo_light.png');
-}
-
-#icon_git:hover{
-    background-image: url('../img/git_logo_dark.png');
-}
-
 
 form{
     width: 600px;
