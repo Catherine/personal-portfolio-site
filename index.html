@@ -11,11 +11,10 @@
         <title>Catherine Patchell</title>
         <meta property="og:title" content="Catherine Patchell's Personal Website">
 
-
         <meta name="description" content="Hi! I'm Catherine, a Web Developer and UI/UX Designer working in Boston, MA.">
         <meta property="og:description" content="Hi! I'm Catherine, a Web Developer and UI/UX Designer working in Boston, MA.">
 
-        <meta property="og:image" content="http://www.catherinepatchell.com/img/grumpy_cat.png">
+        <meta property="og:image" content="http://dev.catherinepatchell.com/img/grumpy_cat.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="500">
         <meta property="og:image:height" content="500">
@@ -24,6 +23,11 @@
 
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png?v=1">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png?v=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png?v=1">
+        
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -59,7 +63,6 @@
                 </div>
             </div>
         </div>
-
         <!-- begin home -->
         <section id="home">
             <div class="container">
@@ -70,13 +73,9 @@
                         <h3 style="">Boston, MA</h3>
                         <h3 style="background-color: rgba(102, 153, 153, .6);">Work Status: Tech Director at <a style="color: #eee; text-decoration:underline;" target="_blank" href="http://www.northeastern.edu/scout">Scout</a></h3>  
                     </div>
-                    <!-- <div class="scroll_down"></div> -->
-                    <!-- <div id="banner_image"></div> -->
-                    <!-- <img src="img/catherine.png" style="width: 500px; height: 200px;"> -->
                 </div>
             </div>
-        </section> <!-- /home -->
-
+        </section> 
         <!-- begin navbar2 -->
         <div id="nav2">
             <div class="navbar navbar-default navbar2" role="navigation">
@@ -88,7 +87,6 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <!-- <a class="navbar-brand" href="#">{Catherine}</a> -->
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -112,7 +110,7 @@
                         <div class="design"></div>
                         <!-- <img src="img/icon_book_128.png"> -->
                         <h2>Design</h3>
-                        <p>The designer must first understand what the customer wants.  The design stage is about creating an awesome experience for the users.</p>
+                        <p>The design stage focuses on learning what the customer needs, prototyping features, testing ideas with users and iterating based on results.</p>
 
                     </div>
                     <div class="col-xs-4">
@@ -152,7 +150,7 @@
                     <div class="col-md-3"></div>
                     <div class="col-md-6" style="color:#eee">
                         <h2>Involvement</h2>
-                        <p style="text-align:left;"> I am currently the Tech Director for Scout, Northeastern's student run design studio, and working as a Fellow for the College of Computer and Information Science (CCIS). Previously, I have acted as the President of CCIS's group to support women in computing, nuWiT.  In my free time you can find me behind a camera, working on misc. projects, painting, and baking (though probably not all at the same time).  
+                        <p style="text-align:left;"> I am currently the Tech Director for Scout, Northeastern's student run design studio. Previously, I have acted as the President of CCIS's group to support women in computing, nuWiT, and as a CCIS Fellow.  In my free time you can find me behind a camera, working on misc. projects, painting, and baking (though probably not all at the same time).  
                         </p>
                     </div>
                     <div class="col-md-3"></div>
@@ -183,6 +181,9 @@
             </div>
             <div class="container">
                 <div class="project_item">
+                    <img data-toggle="modal" data-target="#modal-photo" src="img/portfolio_imgs/photo_portfolio_preview_bw.png">
+                </div
+                ><div class="project_item">
                     <img data-toggle="modal" data-target="#modal-airports" src="img/portfolio_imgs/data_vis_airports_preview_bw.jpg">
                 </div
                 ><div class="project_item">
@@ -202,12 +203,6 @@
                 </div
                 ><div class="project_item">
                     <a href="https://github.com/catherine" target="_blank"><img src="img/portfolio_imgs/fmap_preview_bw.png"></a>
-                </div
-                ><div class="project_item">
-                    <img src="img/placeholder4.png">
-                </div
-                ><div class="project_item">
-                    <img src="img/placeholder4.png">
                 </div>
             </div>
         </section> 
@@ -236,6 +231,22 @@
         <footer>&copy Catherine Patchell 2015</footer>
 
         <!-- Modals to display my work -->
+        <div class="modal fade project_modal" id="modal-photo" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Photography Portfolio</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="img/portfolio_imgs/photo_portfolio.png">
+                        <p>Needing a way to showcase my photography work, I built myself a seperate portfolio site and created a subdomain to access it. This presented the need to also design a landing page that connected my two sites together (this one moved from catherinepachell.com to dev.catherinepatchell.com).  
+                            <a style="color: white; text-decoration:underline;" href="http://photo.catherinepatchell.com" target="_blank">Visit Photography Portfolio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal fade project_modal" id="modal-airports" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -246,7 +257,7 @@
                     <div class="modal-body">
                         <img class="img-responsive" src="img/portfolio_imgs/data_vis_airports.png">
                         <p>D3 - Fall 2014 (As part of graduate level Data Visualization class)<br> Live product: 
-                            <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/airports" target="_blank">here</a>
+                            <a style="color: white; text-decoration:underline;" href="http://dev.catherinepatchell.com/airports" target="_blank">here</a>
                         </p>
                     </div>
                 </div>
@@ -280,7 +291,7 @@
                         <img class="img-responsive" src="img/portfolio_imgs/IM_web_dev_final.png">
                         <p>This was my final project for IM 4100 Web Design and Development during the fall of 2013.  The class emphasized tools and strategies for design, such as site maps, wireframes, prototypes, usability testing, and iterative development.</p>
                         <p>My project explored parallax scrolling, single-page navigation challenges and solutions, designing images and assets, and creating an online educational experience.  Can be found at: 
-                            <a style="color: white; text-decoration:underline;" href="http://www.catherinepatchell.com/wd" target="_blank">catherinepatchell.com/wd</a>
+                            <a style="color: white; text-decoration:underline;" href="http://dev.catherinepatchell.com/wd" target="_blank">dev.catherinepatchell.com/wd</a>
                         </p>
                     </div>
                 </div>
